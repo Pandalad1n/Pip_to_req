@@ -1,7 +1,7 @@
 
 def main():
-    with open('in.txt', 'r') as in_file:
-        with open('out.txt', 'w+') as out_file:
+    with open('rtp_in.txt', 'r') as in_file:
+        with open('rtp_out.txt', 'w+') as out_file:
             for line in in_file:
                 raw = line.split("==")
                 line = f'{raw[0]} = "=={raw[1].strip()}" '
